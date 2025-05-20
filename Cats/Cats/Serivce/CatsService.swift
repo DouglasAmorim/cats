@@ -47,7 +47,6 @@ final class CatService {
         return data
     }
 
-    // MARK: - Generic Request
     private func request<T: Decodable>(endpoint: Endpoint) async throws -> T {
         var components = URLComponents(url: baseURL.appendingPathComponent(endpoint.path), resolvingAgainstBaseURL: false)!
         components.queryItems = endpoint.queryItems
