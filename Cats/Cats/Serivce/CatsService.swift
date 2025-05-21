@@ -1,10 +1,10 @@
 import Foundation
 
-final class CatService {
+class CatsService {
     private let baseURL = URL(string: "https://cataas.com")!
-    private let session: URLSession
+    private let session: URLSessionProtocol
 
-    init(session: URLSession = .shared) {
+    init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
 

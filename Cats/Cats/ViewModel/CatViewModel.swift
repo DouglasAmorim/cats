@@ -13,9 +13,9 @@ class CatViewModel: ObservableObject {
     private var currentOffset: Int = 0
     private let pageSize = 10
 
-    private let service: CatService
+    private let service: CatsService
 
-    init(service: CatService = CatService()) {
+    init(service: CatsService = CatsService()) {
         self.service = service
     }
 

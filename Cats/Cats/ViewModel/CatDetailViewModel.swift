@@ -9,9 +9,9 @@ class CatDetailViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     let cat: Cat
-    private let service: CatService
+    private let service: CatsService
 
-    init(cat: Cat, service: CatService = CatService()) {
+    init(cat: Cat, service: CatsService = CatsService()) {
         self.cat = cat
         self.service = service
     }
